@@ -1,0 +1,52 @@
+The Web Developer Bootcamp
+
+-This course is for everyone
+-professional bootcamp instructor
+-94% of students go to get web dev jobs
+-no php
+-It covers NodeJS
+
+------------------------------------------------------
+
+Compare Frontend and Backend Developers
+	Like a restaurant, front end is where you eat, back end is the kitchen
+Static and Dynamic WebPages
+	Static Web Pages are pages that do not change. Dynamic Webpages are pages that updates.
+
+HTML
+	Hypertext Markup Language
+	The nouns of webapge
+	structure of the webpage
+
+CSS
+	The style of the webpage
+	The adjective of the webpage
+
+Javascript
+	Adds logic and interactivity
+	The verbs of webpage
+
+HTML
+	Structure and content of the page
+	Allows to create hyperlinks
+
+The General Rule
+<tagName> Some Content </tagName>
+
+
+MDN --- Mozilla Developer Network
+
+Div tags and Span tags
+
+DIV 
+	a generic container
+	groups content together block level
+
+SPAN
+	also a generic container
+	groups content inline
+
+Attributes
+	Additional information tag
+	key value pair
+	<tag name="value"> </tag>
