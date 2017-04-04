@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Demo</title>
+</head>
+<body>
+
+	<h1>Login</h1>
+
+<!-- action - where the form sends data to -->
+<!-- method - what http method (get/post) -->
+
+	<form action="http://wikipedia.org">
+		<label>
+			Username:
+			<input type="text" placeholder="username" name="username">
+		</label>
+		<label>
+			Password:
+			<input type="password" placeholder="password" name="password">
+		</label>
+		<input type="Submit">
+	</form>
+
+	<h1>Login</h1>
+	<form action="http://wikipedia.org">
+		<label for="username">	Username: </label>
+		<input type="text" placeholder="username" name="username" id="username">
+		<label for="password">	Password: </label>
+		<input type="password" placeholder="password" name="password" id="password">
+		<input type="Submit">
+	</form>
+
+<!-- validation are attributes that requires an input -->
+<!-- required prevents the form from submitting when empty -->
+
+	<h1>Login Presence Validation</h1>
+	<form action="http://wikipedia.org">
+		<label for="username">	Username: </label>
+		<input type="text" placeholder="username" name="username" id="username" required>
+		<label for="password">	Password: </label>
+		<input type="password" placeholder="password" name="password" id="password" required>
+		<input type="Submit">
+	</form>
+
+<!-- makes sure that email looks like an email or has a correct email -->
+	<h1>Login Data type format</h1>
+	<form action="http://wikipedia.org">
+		<label for="username">	Email: </label>
+		<input type="email" placeholder="email" name="email" id="email">
+		<label for="password">	Password: </label>
+		<input type="password" placeholder="password" name="password" id="password">
+		<input type="Submit">
+	</form>
+
+</body>
+</html>
