@@ -50,3 +50,18 @@ Attributes
 	Additional information tag
 	key value pair
 	<tag name="value"> </tag>
+
+Form Tag
+	Container where inputs are entered.
+	Action -- where to send the data
+	method -- what type of http request to send
+	search in google is a get request
+	sign up are post request. It adds data on the database.
+
+	input tags are used to input for users.
+		type attribs for inputs
+			text
+			date
+			color
+			file
+			checkbox
