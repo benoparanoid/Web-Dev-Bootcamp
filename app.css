@@ -1,0 +1,26 @@
+h1 {
+	color: #FF0000; /* #redgreenblue */
+/*	border-color: purple;
+	border-width: 5px;
+	border-style: solid;*/
+
+	border: 8px orange dashed;
+
+	/*border can be set individually or all in one go*/
+}
+li {
+	color: rgb(0,0,0); /*(red, green, blue) */
+}
+h4 {
+	/* color: rgba(11,99,150,.2); /*(red, green, blue, transparency 0-1) */
+	color: orange;
+	background: rgb(100,100,100);
+}
+
+body {
+/*	background: pink;
+	background: url(https://s-media-cache-ak0.pinimg.com/736x/19/e3/23/19e323dadaf694077b34673cc3cf6f4d.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;*/
+
+}

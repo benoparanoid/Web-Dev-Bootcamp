@@ -1,0 +1,13 @@
+li {
+	border: 2px solid red;
+}
+/* # to select an id */
+#task3{
+	background: yellow;
+}
+
+/* . is used to identify a class */
+
+.completed {
+	text-decoration: line-through;
+}

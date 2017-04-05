@@ -65,3 +65,32 @@ Form Tag
 			color
 			file
 			checkbox
+
+==============================
+
+Css Basics
+
+CSS is the adjective of the page
+
+General rule of css:
+
+	selector {
+		property: value;
+		anotherproperty: value;
+	}
+
+Colors in hexadecimal
+
+# _ _ _ _ _ _
+first 2 -- red
+Second 2 -- green
+Last 2 -- blue
+
+color: rgb(0,255,0); /*(red, green, blue) */
+
+color: rgba(11,99,150,.2); /*(red, green, blue, transparency 0-1) */
+
+css selectors
+
+id is used to identify individual elements
+no 2 ids should be the same
