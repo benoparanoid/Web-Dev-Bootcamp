@@ -1,0 +1,62 @@
+/*font-family is the font of the text.*/
+/*font-size is the size of the font.*/
+/*font-size can be em*/
+
+
+p {
+	font-family: "arial";
+}
+
+h1 {
+	font-family: georgia;
+	font-size: 85px;
+}
+
+body {
+	font-size: 10px;
+}
+
+h1 {
+	font-size: 5.0em;
+}
+
+p {
+	font-size: 2.0em;
+}
+span {
+	font-size: 2.0em; /*size of the parent elemnt x the value set*/
+}
+
+/*font-weight*/
+
+p {
+	font-weight: bold; /*can be 100-800*/
+}
+
+/*line-height*/
+
+p {
+	line-height: 1.5; /*line-height is line spacing*/
+}
+
+/*text-align*/
+
+/*controls how a text is align, left right center*/
+
+h1 {
+	text-align: left;
+}
+
+p {
+	text-align: center;
+}
+
+/*text-decoration*/ /*underline, strikethrough or line through and overline*/
+
+p {
+	text-decoration: underline;
+}
+
+h1 {
+	text-decoration: line-through;
+}
