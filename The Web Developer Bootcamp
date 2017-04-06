@@ -92,5 +92,13 @@ color: rgba(11,99,150,.2); /*(red, green, blue, transparency 0-1) */
 
 css selectors
 
+element selector
+
+id selector --- #
 id is used to identify individual elements
 no 2 ids should be the same
+
+class selector --- .
+
+Specificity
+	multiple styles targetting one element
