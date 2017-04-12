@@ -102,3 +102,29 @@ class selector --- .
 
 Specificity
 	multiple styles targetting one element
+
+
+Box Model
+	Every element has a rectangular box in it.
+
+	padding
+		space bet content and border
+	margin
+		space bet elements
+
+
+Jumbotron
+Container
+	places everything in a container
+form control
+	inputs bootstrapified
+form group
+	adds nice spacing
+single class form-inline
+	makes the forms inline
+
+
+Nav bar
+
+
+code.jquery.com
