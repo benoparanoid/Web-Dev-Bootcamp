@@ -128,3 +128,147 @@ Nav bar
 
 
 code.jquery.com
+
+
+
+
+===============================================
+
+Javascript
+
+Evaluate JS using dev console
+List the 5 JS primitives (explain and define)
+define variables with var keyword
+write code using console.log, alert and prompt
+
+
+Primitives
+
+5 primitive data types
+work with numbers and numeric operators
+work with strings and common string methods
+
+//numbers
+4
+9.3
+-10
+
+//strings
+"hello world"
+"43"
+
+//booleans
+true
+false
+
+//null and undefined
+null
+undefined
+
+//numbers
+operations:
++ - * / ()
+% --- this is modulo or remainder
+
+10 % 3 ======> 1 (remaminder from 10/3)
+
+//strings
+"Hi" + " " + " Goodbye" = Hi Goodbye   ------ This is called concatenation
+"hello world"
+'hello world'
+
+\ ----- escape characters
+ex:
+"she said \"goodbye!\"" ----- she said "goodbye!"
+
+if you need backslash, use \\
+ex:
+"to see a backslash \\"
+"to see a backslash \"
+
+string have a length property, (includes space)
+"hello" .length
+5
+"My Favorite number is 1234!" .length
+27
+
+Access individual characters using [] --start count of position with 0
+"hello" [0]
+"h"
+"hello world" [7]
+"o"
+"Hello World" [6]
+"W"
+
+
+Activity:
+
+100 % 3
+1
+
+("blah" + "blah") [6]
+a
+
+"hello" .length % "hi\\" .length
+2
+
+
+
+
+Variables and syntax
+-container that has a name on it and stores data and values
+-this is the pattern
+var yourVariableName = yourValue;
+
+-They can store all the values we've seen
+var name = "Rusty";
+var secretNumber = 73;
+var isAdorable = true;
+
+-Recall the stored vaalue by calling the variable name
+var name = "Rusty";
+"hello there " + name
+"hello there Rusty"
+
+var num = 37;
+num + 3 + 10
+70
+
+-we can update existing variables
+var name = "Robert";
+name = "Bob";
+
+
+camelCase
+snake_case
+
+
+Null and Undefined
+-var that are declared but not initialized are undefined
+-undefined example
+var name;
+var age;
+
+-null is explicitly nothing
+var currentPlayer = "Charlie";
+currentPlayer = null; --gameover
+
+
+Javascript methods
+clear() ---clearing the console
+
+//alert
+-pops up message
+alert("Hello There")
+alert(52 * 2345)
+
+//console.log
+-print something in the console
+console.log("HEllo console")
+
+
+//prompt
+-lets user input
+prompt("what is your name?")
+
+var userName = prompt("What is your name");
