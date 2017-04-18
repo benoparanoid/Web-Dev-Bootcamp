@@ -272,3 +272,76 @@ console.log("HEllo console")
 prompt("what is your name?")
 
 var userName = prompt("What is your name");
+
+
+====
+Evaluate complex logical statements
+Write conditional statements w/ if, else if, else components
+for loops and while loops
+translate bet while and for loops
+
+
+Boolean Logic
+-writing statements true or false
+-combine thoise statements to create complex statements
+
+>		greater than
+>=		greater than or equal to
+<		less than
+<=		less than or equal to
+==		equal to 				------- performs type coercion (tries to be the same format)
+!=		not equal to
+===		equal value and type
+!==		not equal value or equal type
+
+true == "1"			//true
+0 == false			//true
+null == Undefined 	//true
+NaN == NaN			//false  (NaN is not a number)
+
+Logical Operators
+AND, OR, NOT
+&& 		AND 		true and true = true     true and false is false    false and false is false
+|| 		OR 			true or true = true      true or false is true      false or false is false
+! 		NOT   		!(5===9) = true
+
+
+var x = 10;
+var y = "a"
+
+y === "b" || x >= 10
+false || true
+true
+
+----------------------
+var x = 3;
+var y = 8;
+
+!(x == "3" || x === y) && !(y != 8 && x <= y)
+!(true || false) && !(false && true)
+!(true) && !(false)
+false && true
+false
+
+
+
+
+-----------------------
+var str = ""
+var msg = "haha!"
+var isFunny = "false"
+
+!(( str || msg) && isFunny)
+!((false || true) && true)
+!(true && true)
+!(true)
+false
+
+
+
+JS Conditionals
+-making decisions with code
+
+if
+else if
+else
