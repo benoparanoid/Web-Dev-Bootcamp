@@ -437,3 +437,28 @@ while(num < 150) {
 	num--;
 }
 ----- This is an infinite loop
+
+
+
+--------------------
+For Loops
+understand for loops vs while loops
+write valid for loops
+
+for(init; condition; step) {
+	run the codes;
+}
+
+
+print no. 1-5 with for loop
+---var only exist inside the for loop
+for (var count = 1; count < 6; count++) {
+	console.log(count);
+}
+
+
+print each character in a string with for loop
+var str = "hello"
+for (var i = 0; i < str.length; count++) {
+	console.log(str[count]);
+}
