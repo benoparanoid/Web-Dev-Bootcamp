@@ -459,6 +459,139 @@ for (var count = 1; count < 6; count++) {
 
 print each character in a string with for loop
 var str = "hello"
-for (var i = 0; i < str.length; count++) {
-	console.log(str[count]);
+for (var i = 0; i < str.length; i++) {
+	console.log(str[i]);
 }
+
+---------------------------------
+for(var i = 0; i < 16; i+=8) {
+	console.log(i);
+}
+0
+8
+
+----------------------------------
+var str = "ahceclwlxo";
+
+for(var i = 1; i < str.length; i+=2){
+	console.log(str[i]);
+}
+h
+e
+l
+l
+o
+
+
+
+==================================================
+
+Write function declarations and function expressions
+Explain diff bet console.log and return
+Define functions that take multiple arguments
+
+
+JS Functions
+-understand why we use functions
+-def function w/o arguments
+-w arguments
+-return value from func
+
+Functions
+-reusable bits of code
+
+
+1. Declare a function first:
+
+function doSomething() {
+	console.log("Hello World");
+}
+
+2. Then Call it: ----if w/o (), it will just call the function, not execute
+
+doSomething();
+doSomething();
+doSomething();
+doSomething();
+
+
+---------------
+
+Arguments
+-write functions that take inputs
+
+function square(num){
+	console.log(num * num);
+}
+
+square(2) ------ 4
+
+
+function area(length, width){
+	console.log(length * width);
+}
+
+area(9,2); -------- 18
+
+
+--------------------
+Return Keyword
+-often we want a function to send back an output value
+-when a return is executed, all the codes after the return w/in the argument is not executed
+
+function square(x) {
+    return x * x;			------- only 1 return per argument unless within other arguments
+}
+
+
+"4 squared is: " + square(4)
+"4 squared is: 16"
+
+
+
+Capitalize!
+
+function capitalize(str) {
+	return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+var city = "paris";		----------- "paris"
+var capital = capitalize(city) ------- "Paris"
+
+
+
+
+function declaration vs function expression
+
+function declaration
+function capitalize(str) {
+	return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+
+function expression
+var capitalize = function(str) {
+	return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+
+
+----------------------
+function test(x,y) {
+	return y - x;
+}
+
+test(10, 40); ------------ 30
+
+
+
+function test(x) {
+	return x*2;
+	console.log(x);
+	return x/2;
+}
+
+test(40); ----------------- 80
+
+
+
