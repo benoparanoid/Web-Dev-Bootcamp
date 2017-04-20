@@ -21,10 +21,31 @@ function isEven(num) {
 	}
 }
 
+
 function factorial(num){
-	for(var i = num; i > 2; i--){
-		 var num = num * (i-1);
+	var num = Number(num);
+	if(num === 0) {
+		var num = 1;
+		return num;
 	}
-	return num;
+	else {
+		for(var i = num; i > 2; i--){
+			var num = num * (i-1);				//num *= i;
+		}
+		return num;
+	}
 }
 
+
+function kebabToSnake(str) {
+	while (Number(str.indexOf("-")) !== -1){
+		var str = str.replace("-","_");
+	}
+	return str;
+}
+
+
+function kebabToSnake(str) {
+	var str = str.replace(/-/g,"_");
+	return str;
+}
