@@ -595,3 +595,191 @@ test(40); ----------------- 80
 
 
 
+===================================================
+Scope
+-context that code is executed in
+
+Higher order Functions
+-passing functions to other functions
+
+---------------
+function sing(){
+    console.log("twinkle twinkle...");
+    console.log("how i wonder");
+}
+undefined
+sing()
+twinkle twinkle...
+how i wonder
+
+setInterval(sing, 1000);
+27
+
+VM260:2 twinkle twinkle...
+VM260:3 how i wonder
+VM260:2 twinkle twinkle...
+VM260:3 how i wonder
+
+clearInterval(27)			------ end Interval
+
+
+
+----------------
+setInterval(function(){
+    console.log("I am an anonymous function");
+    console.log("This is awesome!");
+}, 2000);
+32
+VM468:2 I am an anonymous function
+VM468:3 This is awesome!
+VM468:2 I am an anonymous function
+VM468:3 This is awesome!
+VM468:2 I am an anonymous function
+VM468:3 This is awesome!
+VM468:2 I am an anonymous function
+VM468:3 This is awesome!
+VM468:2 I am an anonymous function
+VM468:3 This is awesome!
+VM468:2 I am an anonymous function
+VM468:3 This is awesome!
+
+clearInterval(32)
+
+
+
+=========================================
+array
+-store values and any type of data
+
+
+define arrays(using codes)
+use builtin array methods to add and remove
+
+
+Array!
+var friend1 = "Charlie";
+var friend2 = "Liz";
+var friend3 = "David";
+var friend4 = "Mattias";
+
+--------
+
+var friends = ["Charlie", "Liz", "David", "Mattias"];
+					0		1		2			3				----- array are indexed starting 0.
+
+
+console.log(friends[0])					----This calls "Charlie"
+friends[1] + " <3 " + friends[2]		---- This calls "Liz <3 David"
+
+
+
+---------------
+Update array
+var friends = ["Charlie", "Liz", "David", "Mattias"];
+
+friends[0] = "Chuck";
+friends[1] = "Lizzie";					---------Chuck, Lizzie, David, Mattias
+
+friends[4] = "Amelie";					---------Chuck, Lizzie, David, Mattias, Amelie
+
+
+friends[10] = "Beno"                    --------- Chuck, Lizzie, David, Mattias, Amelie, undefine x 5, Beno
+
+
+
+-------------------
+var friends = [];				-----Adding array
+var friends = new Array();		-----Adding Array
+
+var random_collection = [49, true, "hermione", null];		----array holds any type
+
+var nums = [45,37,89,24];
+nums.length    //4				
+
+
+=============================
+
+Arrays methods:
+
+push/pop
+shift/unshift
+indexOf
+slice
+
+------------------------
+push/pop
+Push -adding something to the very end of the array
+
+
+var colors = ["red", "orange","yellow"];
+
+colors.push("green");
+colors ---------- red, orange, yellow, green
+
+
+Pop-removes the last element in an array
+
+colors.pop ------- green
+colors ---------------- red, orange, yellow
+
+var col = colors.pop();   ------------------ yellow
+
+
+------------------------
+Shift/Unshift
+-Add and remove from the beginning of the array
+
+Unshift
+- adding 
+var colors = ["red", "orange","yellow"]		----------red, orange, yellow,
+colors.unshift("infrared")					----------infrared, red, orange, yellow
+
+colors.shift("orange")						-----------infrared, red, yellow
+
+var col = colors.shift();					-----------infrared
+
+
+
+------------------------
+indexOf
+
+var colors = ["red", "orange","yellow","orange"]
+colors.indexOf("orange")			-------1 ----returns the first index matched
+colors.indexOf("yellow")			-------2
+colors.indexOf("grey")				------- (-1) this is the value if not present
+
+
+
+-------------------------
+slice
+-copy different portions of the array
+
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(1,3)				--------- Orange, Lemon
+						 (cut begins, slice should stop but not included)
+
+
+var otherNums = fruits.slice();			-----------copies whole array
+
+
+Arrays exercise
+-------------------------------------
+var numbers = [22,67, 33, 96, 88];
+
+console.log(numbers[numbers.length])	------ undefined
+
+
+-------------------------------------
+Nested Array
+
+
+var friendGroups = [
+	["Harry", "Ron", "Hermione"],
+	["Malfoy", "Crabbe", "Goyle"].
+	["Mooney", "Wormtail", "Prongs"]
+];
+
+console.log(friendGroups[2][0]);			------- Mooney (friendGroups[array][inside the array])
+
+
+------------------------------------
