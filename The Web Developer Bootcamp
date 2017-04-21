@@ -782,4 +782,46 @@ var friendGroups = [
 console.log(friendGroups[2][0]);			------- Mooney (friendGroups[array][inside the array])
 
 
-------------------------------------
+============================================
+Array Iteration
+Use for loop to iterate over an array
+use forEach to iterate over an array
+Compare and contrast for loops and forEach
+
+-----------------
+for loop
+-to loop over an array using for loop, use the length property
+
+
+var colors = ["red", "orange", "yellow", "green"];
+
+for(var i = 0; i < colors.length; i++) {
+	console.log(colors[i]);
+}
+
+
+-----------------
+forEach
+-easy way of iterating array
+
+arr.forEach(someFunction)
+
+var colors = ["red", "orange", "yellow", "green"];
+
+colors.forEach(
+	function() {
+    	console.log("Inside the forEach ")
+    }
+);
+4x Inside the forEach 
+
+
+colors.forEach(
+	function(iLoveDogs){
+		console.log("INSIDE THE FOREACH " + iLoveDogs);
+	}
+);
+INSIDE THE FOREACH red
+INSIDE THE FOREACH orange
+INSIDE THE FOREACH yellow
+INSIDE THE FOREACH green
