@@ -21,19 +21,37 @@ while(start != "quit"){
 	if(start == "new"){
 		if (todo.length === 0){
 			var todo = [prompt("enter a new todo")];
+			console.log(todo[todo.length - 1] + " added to list");
 			var start = question();
 		}
 		else {
 			todo.push(prompt("Enter a new todo"));
+			console.log(todo[todo.length - 1] + " added to list");
 			var start = question();
 		}
 	}
 	else if(start == "list"){
-		console.log(todo);
+		console.log("***********");
+		todo.forEach(function(list) {
+			console.log(todo.indexOf(list) + ": " + list);
+		});
+		console.log("***********");
+		var start = question();
+	}
+	else if(start == "delete"){
+		var del = Number(prompt("Enter index of todo to delete"));
+		todo.splice(del,1);
+		console.log("Todo Removed");
 		var start = question();
 	}
 	else {
 		var start = question();
 	}
 }
+console.log("OK, YOU QUIT THE APP!");
+
+
+
+
+
 
