@@ -848,3 +848,63 @@ numbers.forEach(function(color) {
 
 
 var todo.splice(index, how many) ======== deleting something from array
+
+
+
+=======================
+Objects
+- unlike arrays, objects have no order
+
+example:
+
+var person = {
+	name: "Cindy",
+	age: 32,
+	city: "Missoula"
+}
+
+--- to display object properties
+console.log(person["name"]);
+console.log(person.name)    ----- this cannot be used if starts with number
+
+--- to update objects
+person["age"] += 1;
+person.city = "London";
+
+-----------------
+Creating objects
+
+var person = {}
+person.name = "Travis";
+person.age = 21;
+person.city = "LA";
+
+or
+
+var person = {
+	name: "Beno"
+	age: 27
+	city: "Manila"
+};
+
+or
+
+var person = new Object();
+person.name = "Travis";
+person.age = 21;
+person.city = "LA";
+
+-----------------
+Objects can hold all sorts of data
+
+var junkObject = {
+	age: 57,
+	color: "purple",
+	isHungry: true,
+	friends: ["Horatio", "Hamlet"],
+	pet: {
+		name: "Rusty",
+		species: "Dog",
+		age: 2
+	}
+}
